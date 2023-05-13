@@ -31,3 +31,6 @@
 .slick-slider .slick-track, .slick-slider .slick-list{
     display: flex;
 }
+.slick-dotted.slick-slider {
+    margin-bottom: 49px;
+}
