@@ -988,6 +988,19 @@ video[poster]{
 .lotteryBox[data-select="true"] .lotteryOpenBtn .toClose{
     display: inline-block;
 }
+.lotteryBox.plus{
+    max-height: 0;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+}
+.lotteryBox.plus[data-toggle="true"]{
+    max-height: 1000px;
+    padding: 20px;
+    margin-bottom: 20px;
+    opacity: 1;
+}
 .cooperations{
     display: flex;
     flex-wrap: wrap;
@@ -2031,6 +2044,9 @@ video[poster]{
     }
     .tagElement:first-child{
         margin-bottom: 10px;
+    }
+    .toggleBtn{
+        width: 60%;
     }
 }
 @media screen and (max-width: 380px) {
