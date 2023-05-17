@@ -953,6 +953,7 @@ video[poster]{
 }
 .lotteryOpenBtn i{
     margin-left: 10px;
+    transition: .5s;
 }
 .lotteryOpenBtn:hover{
     filter: brightness(1.5);
@@ -1330,7 +1331,62 @@ video[poster]{
     height: 100%;
     object-fit: cover;
 }
+.openZone{
+    display: flex;
+    align-items: center;
+}
 
+.btnLine{
+    height: 1px;
+    flex: 1;
+    background-color: #3e3e3e;
+}
+.toggleBtn{
+    padding: 14px 20px;
+    background: linear-gradient(180deg,#3e3e3e,#1f1f1f);
+    border-radius: 30px;
+    position: relative;
+    color: white;
+    display: flex;
+    align-items: center;
+    width: 120px;
+    justify-content: center;
+}
+.toggleBtn i{
+    margin-left: 10px;
+    transition: .5s;
+}
+.toggleBtn::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: calc(100% - 14px);
+    height: calc(100% - 14px);
+    border: 1px solid #b52520;
+    border-radius: 20px;
+}
+.toggleBtn[data-active="true"] .toClose{
+    display: block;
+}
+.toggleBtn[data-active="true"] .toOpen{
+    display: none;
+}
+.toggleBtn[data-active="true"] i{
+    transform: rotate(180deg);
+}
+.toggleBtn .toClose{
+    display: none;
+}
+.lotteryPlus{
+    overflow: hidden;
+    max-height: 0;
+    transition: .5s;
+}
+.lotteryPlus[data-open="true"]{
+    max-height: 2000px;
+}
 
 /* light-case */
 /* #lightcase-content{
