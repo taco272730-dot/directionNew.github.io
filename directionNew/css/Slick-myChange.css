@@ -22,7 +22,7 @@
     bottom: -47px;
 }
 .slick-dots li.slick-active button:before{
-    color: #fefea1;
+    color: #b52520;
     transition: .5s;
 }
 .slider-students .slick-dots li.slick-active button:before{
@@ -33,4 +33,7 @@
 }
 .slick-dotted.slick-slider {
     margin-bottom: 49px;
+}
+.slick-dots li button:before{
+    color: #a4a4a4;
 }
