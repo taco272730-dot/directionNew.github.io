@@ -1260,7 +1260,7 @@ video[poster]{
 }
 .son-basic{
     margin: 0 10px;
-    box-shadow: 8px 5px 5px #00000012;
+    box-shadow: -1px -2px 0px #ffffff2b inset;
     border-radius: 20px;
     overflow: hidden;
     position: relative;
@@ -1291,8 +1291,8 @@ video[poster]{
     padding: 35px 20px;
 }
 .slider-lessons-son .lesson-price{
-    text-align: right;
     margin-bottom: 20px;
+    color: white;
 }
 .slider-lessons-son .lesson-price em{
     font-size: 25px;
@@ -1302,22 +1302,20 @@ video[poster]{
 .slider-lessons-son .lesson-detail{
     display: flex;
     justify-content: center;
-    padding: 5px 0;
-    border-width: 1px 0;
+    padding: 10px 0 0;
+    border-width: 1px 0 0;
     border-style: solid;
-    border-color: #e5e5e5;
+    border-color: #3e3e3e;
 }
 .slider-lessons-son .lesson-detail li{
     display: flex;
     flex: 1;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     font-weight: normal;
-    color: #bababa;
 }
 .slider-lessons-son .lesson-detail li h1{
     font-weight: normal;
-    margin-left: 10px;
 }
 .slider-lessons-son .lesson-btn{
     display: flex;
