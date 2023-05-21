@@ -1,12 +1,13 @@
 .slick-prev:before, .slick-next:before{
     font-size: 40px;
     transition: .5s;
+    color: #6e6e6e;
 }
-.slider-students .slick-prev:before,
+/* .slider-students .slick-prev:before,
 .slider-students .slick-next:before{
     color: gray !important;
 
-}
+} */
 .slick-prev, .slick-next{
     width: 40px;
     height: 40px;
@@ -25,9 +26,9 @@
     color: #b52520;
     transition: .5s;
 }
-.slider-students .slick-dots li.slick-active button:before{
+/* .slider-students .slick-dots li.slick-active button:before{
     color: #45c5c6;
-}
+} */
 .slick-slider .slick-track, .slick-slider .slick-list{
     display: flex;
 }

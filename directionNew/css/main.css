@@ -462,7 +462,7 @@ body{
     margin: 0 auto;
 }
 .content.inside{
-    padding: 40px 0 0;
+    /* padding: 40px 0 0; */
     box-sizing: border-box;
 }
 .content section .beginning{
@@ -677,7 +677,7 @@ body{
     -ms-flex-align: center;
     align-items: center;
     width: 70%;
-    margin: 20px auto 45px;
+    margin: 60px auto 45px;
 }
 .main-title__bar {
     height: 2px;
@@ -1306,6 +1306,8 @@ video[poster]{
     border-width: 1px 0 0;
     border-style: solid;
     border-color: #3e3e3e;
+    font-size: 13px;
+    line-height: 20px;
 }
 .slider-lessons-son .lesson-detail li{
     display: flex;
@@ -1370,6 +1372,10 @@ video[poster]{
     align-items: center;
     width: 120px;
     justify-content: center;
+    transition: .5s;
+}
+.toggleBtn:hover{
+    filter: brightness(1.5);
 }
 .toggleBtn i{
     margin-left: 10px;
@@ -1405,6 +1411,67 @@ video[poster]{
 }
 .lotteryPlus[data-open="true"]{
     max-height: 2000px;
+}
+.slider-students{
+    position: relative;
+    z-index: 10;
+    margin-bottom: 150px !important;
+}
+.students-head{
+    position: absolute;
+    width: 109%;
+    height: 98px;
+    border-radius: 50%;
+    background: linear-gradient(180deg, #484848, #121212);
+    top: -38px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.students-head figure{
+    position: absolute;
+    bottom: -33px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70px;
+    height: 70px;
+    background-color: rgb(94, 94, 94);
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    box-shadow: 4px 5px 9px #0000003b;
+}
+.students-head figure::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 1px solid #b52520;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    border-radius: 50%;
+}
+.slider-students-son{
+    background: linear-gradient(
+        180deg
+        , #363636,#222222);
+    padding: 110px 20px 30px;
+    box-sizing: border-box;
+    color: white;
+    position: relative;
+}
+.slider-students-son h1{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.slider-students-son h2{
+    font-size: 13px;
+    font-weight: normal;
+    color: #8b8b8b;
 }
 
 /* light-case */
@@ -1579,7 +1646,7 @@ video[poster]{
     } */
     /* light-case */
     .content.inside{
-        padding: 45px 28px 35px;
+        padding: 0 28px 35px;
     }
     .show-box{
         flex-direction: column;
@@ -1931,7 +1998,7 @@ video[poster]{
 
 
     .content.inside{
-        padding: 20px 14px 15px;
+        padding: 0 14px 15px;
     }
     .show-box{
         flex-direction: column;
@@ -2044,6 +2111,7 @@ video[poster]{
     }
     .main-title{
         width: 100%;
+        margin-top: 15px;
     }
     .tagZone{
         flex-direction: column;
@@ -2053,6 +2121,9 @@ video[poster]{
     }
     .toggleBtn{
         width: 60%;
+    }
+    .slider-students{
+        margin-bottom: 80px !important;
     }
 }
 @media screen and (max-width: 380px) {
@@ -2086,7 +2157,7 @@ video[poster]{
         margin: 0 20px;
     }
     .content.inside{
-        padding: 20px 12px 15px;
+        padding: 0 12px 15px;
     }
     .show-box__element figure{
         width: calc(100% - 16px);
