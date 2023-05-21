@@ -1318,6 +1318,7 @@ video[poster]{
 }
 .slider-lessons-son .lesson-detail li h1{
     font-weight: normal;
+    color: #8b8b8b;
 }
 .slider-lessons-son .lesson-btn{
     display: flex;
@@ -1412,10 +1413,10 @@ video[poster]{
 .lotteryPlus[data-open="true"]{
     max-height: 2000px;
 }
-.slider-students{
+.slider-students,.slider-lessons{
     position: relative;
     z-index: 10;
-    margin-bottom: 150px !important;
+    margin-bottom: 120px !important;
 }
 .students-head{
     position: absolute;
