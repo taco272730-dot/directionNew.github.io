@@ -565,7 +565,7 @@ body{
     transform: translate(-50%, -50%) !important;
     text-align: center;
     box-shadow: 6px 5px 18px 1px #00000075;
-    background-color: #49abec;
+    background-color: #b52520;
     animation: unset;
 }
 .zone__image:hover img{
@@ -822,7 +822,7 @@ video[poster]{
     top: -100px;
 }
 .lotteryTopZone{
-    padding: 20px 0;
+    padding: 20px 0 0;
 }
 .lotteryBox{
     position: relative;
@@ -1811,7 +1811,7 @@ video[poster]{
     }
     .video-box{
         flex-direction: column;
-        margin-bottom: 45px;
+        /* margin-bottom: 45px; */
     }
     .video-box__video{
         margin-right: 0;
@@ -2141,6 +2141,9 @@ video[poster]{
     }
     .slider-students{
         margin-bottom: 80px !important;
+    }
+    .slider-students,.slider-lessons{
+        margin-bottom: 88px !important;
     }
 }
 @media screen and (max-width: 380px) {
