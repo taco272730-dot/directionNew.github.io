@@ -374,6 +374,14 @@ body{
     left: 2%;
     /* width: 34vw; */
 }
+.topView__text figure{
+    width: 300px;
+    animation: fadeRight 1s;
+    transition: .5s;
+}
+.topView__text figure img{
+    width: 100%;
+}
 .topView__logo{
     animation: fadeRight .5s;
 }
@@ -472,8 +480,8 @@ body{
     margin: 0 40px 40px;
 }
 
-.zone{
-    padding: 60px 0;
+.zone {
+    padding: 70px 0;
 }
 
 .zone.zone--flex{
@@ -513,7 +521,7 @@ body{
     height: 400px;
     border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0 0 20px #4ba9e7, 0 0 66px #b52520;
+    box-shadow: 0 0 66px #b52520;
     /* animation: flush 2s infinite; */
     position: relative;
 }
@@ -678,6 +686,9 @@ body{
     align-items: center;
     width: 70%;
     margin: 60px auto 45px;
+}
+.main-title.plusPage{
+    width: 100%;
 }
 .main-title__bar {
     height: 2px;
@@ -1474,17 +1485,39 @@ video[poster]{
     font-weight: normal;
     color: #8b8b8b;
 }
-.logoZone{
+.logoZoneFooter{
     padding-right: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.logoZone figure{
+.logoZoneFooter figure{
     max-width: 250px;
 }
-.logoZone img{
+.logoZoneFooter img{
     width: 100%;
+}
+.linkIcons{
+    display: flex;
+    flex-wrap: wrap;
+}
+.linkIcons a{
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    transition: .5s;
+    filter: brightness(0.7);
+}
+.linkIcons a:hover{
+    filter: brightness(1);
+}
+.linkIcons a img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 /* light-case */
 /* #lightcase-content{
@@ -1589,7 +1622,7 @@ video[poster]{
     .navBar_h5 .logoZone{
         position: relative;
         /* height: 30px; */
-        width: 140px;
+        width: 185px;
         padding-left: 10px;
     }
     .navBar_h5 .logoZone img{
@@ -1756,8 +1789,9 @@ video[poster]{
     .slider-feature-son h2{
         font-size: 13px;
         font-weight: normal;
+        color: #8b8b8b;
     }
-    .logoZone{
+    .logoZoneFooter{
         width: 100%;
         padding-right: 0;
         padding-bottom: 30px;
@@ -1795,6 +1829,9 @@ video[poster]{
     }
     .tagElement h1{
         margin-bottom: 5px;
+    }
+    .topView__text figure{
+        width: 25vw;
     }
 }
 @media screen and (max-width: 753px) {
@@ -1840,6 +1877,9 @@ video[poster]{
     }
     .lotteryBox_body .lotteryHalfSide.after aside:first-child{
         margin-left: 0;
+    }
+    .topView__text figure{
+        width: 30vw;
     }
 }
 @media screen and (max-width: 613px) {
@@ -2039,7 +2079,8 @@ video[poster]{
         padding: 30px 30px 90px;
     }
     .footer-contact{
-        display: none;
+        width: 100%;
+        margin-top: 20px !important;
     }
     .footer-about,.footer-service{
         width: 50%;
