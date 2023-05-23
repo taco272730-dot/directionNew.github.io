@@ -1549,7 +1549,7 @@ video[poster]{
     color: #8b8b8b;
     font-size: 14px;
     line-height: 20px;
-    background: linear-gradient(180deg, #393939, #1b1a1ac2);
+    background: linear-gradient(180deg, #393939, #1b1a1a);
 }
 .popupInside{
     z-index: 20;
