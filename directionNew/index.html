@@ -8103,14 +8103,14 @@
                     <div class="link-content">
                         <a href="#" class="option-wireframe"><i class="fa-solid fa-play"></i>博彩平台推荐</a>
                         <a href="#" class="option-mobile"><i class="fa-solid fa-play"></i>体育电竞平台</a>
-                        <a href="#" class="option-varied"><i class="fa-solid fa-play"></i>线上博彩综合评价</a>
+                        <a href="#" class="option-desktop"><i class="fa-solid fa-play"></i>线上博彩综合评价</a>
                     </div>
                 </aside>
                 <aside class="footer-service">
                     <h1>与我合作</h1>
                     <div class="link-content">
                         <a href="#"><i class="fa-solid fa-play"></i>联系我们</a>
-                        <a href="#"><i class="fa-solid fa-play"></i>課程產品資訊</a>    
+                        <a href="#" class="popupTrigger"><i class="fa-solid fa-play"></i>广告洽谈</a>    
                     </div>
                 </aside>
                 <aside class="footer-contact">
@@ -8149,7 +8149,60 @@
     <div id="top">
         <a class="top_btn" href="#homeTop"><i class="fas fa-angle-up "></i></a>
     </div>
-
+    <div class="popup_cover">
+        <div class="lotteryBox popup">
+            <div class="popupCloseBtn">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <div class="popupInside">
+                <aside>
+                    <h1>Best Online Betting线上博彩平台导航站</h1>
+                    <p>团队以多方位角度检视线上投注平台，平台流畅度、游戏盘口玩法、出入金速度、游戏赔率、平台活动等进行综合评分，欢迎老台前来测试，也欢迎用户提供反馈及新台让我们进行评测，共同打造更好的线上投注环境。</p>
+                </aside>
+                <aside>
+                    <h1>关于我们</h1>
+                    <p>团队多年经验，顶级口碑，每月实测，只推优质平台，实测超过800家线上博彩平台，累积超过10000+真实玩家反馈，让你少走冤枉路，杜绝及抵制黑台，我们只用真的现金来为玩家进行各个网上平台测试，目前测试站点持续增加中，只有真实体验才有办法知道网上平台的真实性，所有推荐及评测皆是公平公正，网上众多博彩平台，优质的平台并不好找，我们团队从各种角度对网上博彩平台进行评分，以确保给玩家安全且优质畅快的体验，故此每月皆会更新属于玩家的最佳网站推荐排名清单，TOP15平台皆都是可担保出款，可放心畅快体验及游玩。</p>
+                </aside>
+                <aside>
+                    <h1>联系我们</h1>
+                    <ul>
+                        <li>
+                            <h3>官方域名：</h3>
+                            <h4>
+                                <a href="#" target="_blank">bestbet.mdj.bet</a>
+                                <a href="#" target="_blank">best.xxx.bet</a>
+                                <a href="#" target="_blank">123.xxx.bet</a>
+                            </h4>
+                        </li>
+                        <li>
+                            <h3>站长TG：</h3>
+                            <h4>
+                                <a href="#" target="_blank">@bigbossvip999</a>
+                            </h4>
+                        </li>
+                        <li>
+                            <h3>副站长TG：</h3>
+                            <h4>
+                                <a href="#" target="_blank">@Yen_216</a>
+                            </h4>
+                        </li>
+                        <li>
+                            <h3>官方TG：</h3>
+                            <h4>
+                                <a href="#" target="_blank">预留我让妹妹去创群</a>
+                            </h4>
+                        </li>
+                        <li>
+                            <h3>温馨提示：</h3>
+                            <h4>
+                                为了防止冒充 TG账户模仿、劫持、请不要使用飞机全局搜索用户名，联系请复制带@用户名直接在聊天框发送后点击联系！
+                            </h4>
+                        </li>
+                    </ul>
+                </aside>    
+            </div>
+        </div>
+    </div>
 
 
 
@@ -8385,6 +8438,14 @@
         // $(".lotteryBox").attr("data-select","false");
         $(".lotteryBox.plus").attr("data-toggle") == "true" ? $(".lotteryBox.plus").attr("data-toggle", "false") : $(".lotteryBox.plus").attr("data-toggle", "true");
         $(this).attr("data-active") == "true" ? $(this).attr("data-active", "false") : $(this).attr("data-active", "true");
+    });
+
+    //footer popup开关
+    $('.popupTrigger').click(function(){
+        $(".popup_cover").attr("data-open", "true")
+    });
+    $('.popupCloseBtn').click(function(){
+        $(".popup_cover").attr("data-open", "false")
     });
 
     //slick内容
