@@ -1048,6 +1048,9 @@ video[poster]{
     margin-right: 30px;
     align-items: center;
 }
+.tagElement em{
+    color: #b52520;
+}
 .tagElement:last-child{
     margin-right: 0;
 }
