@@ -915,6 +915,7 @@ video[poster]{
 }
 .lotteryAvatar{
     width: 200px;
+    height: 150px;
     border-radius: 10px;
     overflow: hidden;
     position: relative;
@@ -1939,6 +1940,9 @@ video[poster]{
     .lotteryBox.popup{
         width: 80%;
     }
+    .lotteryAvatar{
+        height: 135px;
+    }
 }
 @media screen and (max-width: 753px) {
     .topView__text h1{
@@ -2230,6 +2234,7 @@ video[poster]{
     /* light-case */
     .lotteryAvatar{
         width: 120px;
+        height: 110px;
     }
     .lotteryHalfSide.after{
         flex-direction: column;
