@@ -762,17 +762,17 @@ body{
 .show-box__element figure{
     position: relative;
     width: calc(100% - 40px);
-    height: 200px;
+    height: 145px;
     background-color: gray;
     margin-bottom: 20px;
     border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0 0 20px #4ba9e7, 0 0 66px #b52520;
+    box-shadow: 0 0 20px #ff504a, 0 0 66px #b52520;
 }
 .show-box__element figure::after{
     content: "點我放大";
     position: absolute;
-    top: 112%;
+    top: 117%;
     left: 50%;
     transform: translate(-50%,-50%);
     padding: 10px 0;
@@ -781,7 +781,7 @@ body{
     font-size: 14px;
     font-weight: bold;
     border-radius: 14px;
-    background-color: #4ba9e7;
+    background-color: #b52520;
     text-align: center;
     box-shadow: 6px 5px 18px 1px #00000075;
     transition: .5s;
@@ -2228,7 +2228,7 @@ video[poster]{
         line-height: 50px;
     }
     .show-box__element figure{
-        height: 160px;
+        height: 100px;
     }
     /* light-case */
     /* #lightcase-content{
