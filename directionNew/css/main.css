@@ -1599,6 +1599,7 @@ video[poster]{
 }
 .lotteryBox.popup h4{
     display: flex;
+    flex-direction: column;
 }
 .lotteryBox.popup a{
     display: block;
